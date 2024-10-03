@@ -1,0 +1,640 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body { 
+    background-color: rgb(28, 28, 28);
+    font-family: "Poppins", system-ui;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure the body takes the full viewport height */
+}
+.Main-Crate {
+    min-height: 100vh; /* Ensure the Main-Crate div fills the viewport height */
+    width: 100%;
+    padding-bottom: 50px; /* Add space at the bottom */
+}
+
+.Header {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+}
+
+.Nav-List {
+    flex: 1;
+    align-items: center;
+}
+
+.Navlist {
+    display: flex;
+    gap: 3.5rem;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Navlist li {
+    list-style: none;
+}
+
+.Navlist li a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #bbb;
+}
+
+.LOGO {
+    margin-left: 100px;
+}
+
+.logo {
+    width: 250px;
+    height: 150px;
+    display: block;
+    transform-origin: center;
+    transform: scale(1.5) translateY(2.5px);
+}
+
+.Intro-section {
+    display: flex;
+    flex-direction: row;
+    min-height: 500px; /* Increase section height */
+    padding-bottom: 50px; /* Add padding at the bottom */
+}
+
+.left-section {
+    width: auto;
+    height: 100%; /* Ensure the section takes full height */
+}
+
+.right-section {
+    flex: 1;
+    width: auto;
+    height: 100%; /* Ensure the section takes full height */
+    margin-top: 100px;;
+}
+
+.Introduction {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px; /* Add spacing below the intro section */
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Set the height of the container */
+    width: 100%;
+    gap: 25px;
+    margin-left: 100px;
+    margin-top: 175px;
+    color: #bbb;
+    cursor: pointer;
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-top: 100px; /* Shift the intro content downward */
+    margin-left: 50px;
+}
+
+.greeting {
+    color: #bbb;
+    font-size: 25px; /* Increase font size */
+    margin-bottom: 5px; /* Add space below greeting */
+    margin-top: 10px;
+    margin-left: -360px;
+    padding-left: 0px;
+}
+
+.proffesion {
+    color: #209bba;
+    font-size: 45px; /* Increase profession font size */
+    margin-bottom: 10px; /* Add space below profession */
+}
+
+.brief-intro {
+    width: 700px; /* Make the intro wider */
+    color: #bbb;
+    margin-top: 10px; /* Increase space above the brief intro */
+    font-size: 18px; /* Make the text slightly bigger */
+    line-height: 1.6; /* Improve readability with line spacing */
+}
+
+.resume-button {
+    margin-top: 25px; /* Increase spacing above button */
+}
+
+.button {
+    width: 120px; /* Increase button width */
+    height: 45px; /* Increase button height */
+    border-radius: 8px; /* Slightly more rounded */
+    font-weight: 600;
+    font-size: 16px; /* Increase button text size */
+    color: rgb(28, 28, 28);
+    background-color: #209bba;
+    border: 2px solid rgb(28, 28, 28);
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s, border 0.4s;
+}
+
+.button:hover {
+    background-color: rgb(28, 28, 28);
+    color: #209bba;
+    border: 2px solid #209bba;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 50px; /* Add space at the bottom of the profile section */
+}
+
+.profile-pic-container {
+    width: 320px; /* Increase the size of the profile pic container */
+    height: 320px;
+    border-radius: 50%;
+    border: 5px solid #80c9db;
+    box-shadow:
+        0 0 15px #209bba,
+        0 0 30px #209bba,
+        0 0 45px #209bba,
+        inset 0 0 10px #209bba,
+        inset 0 0 20px #209bba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-pic {
+    width: 300px; /* Slightly smaller than the container to leave space */
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: scale(1.05); /* Minor zoom for a better fit */
+}
+/* Skill Section Header Styling */
+.skill-section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skill-section-header h2 {
+    font-size: 36px;
+    color: #209bba;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.skill-section-header p {
+    font-size: 18px;
+    color: #bbb;
+    position: relative;
+    margin-left: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.skill-section-header .arrow {
+    font-size: 22px;
+    color: #209bba;
+    margin-left: 10px;
+}
+
+/* Skill Cards Section */
+.skill-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 200px;
+}
+.skill-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+/* Neon Effect on Hover */
+.skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px #209bba, 0 0 10px #209bba;
+}
+
+/* Skill Logo Styling */
+.skill-logo {
+    margin-bottom: 15px;
+}
+
+.skill-logo i {
+    font-size: 40px;
+    color: inherit; /* Original logo color */
+}
+
+.C-logo {
+    width: 35px;
+    height: 35px;
+}
+
+/* Title and Description Styling */
+h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #209bba;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #bbb;
+}
+
+/* Progress Bar Container */
+.progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* Progress Bar Styling */
+.progress-bar {
+    width: 80%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #209bba;
+    border-radius: 10px;
+}
+
+/* Percentage Label Styling */
+.percentage {
+    font-size: 14px;
+    color: #209bba;
+    font-weight: 600;
+}
+.project-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Optional: adjust based on container height */
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}  
+.recent{
+    font-size: 18px;
+    color: #bbb;
+    position: relative;
+    margin: 0px;
+}
+.project{
+    font-size: 36px;
+    color: #209bba;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.project-odd{
+    display: flex;
+    flex-direction: row;
+    background-color: #209bba;
+}
+.project-odd-image-container{
+    width: 600px;  /* Decided width */
+    height: 290px; /* Decided height */
+    overflow: hidden; /* Ensures the image does not overflow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-odd-img{
+    width: 100%;   /* Ensure the image is the same width as the container */
+  height: 100%;  /* Ensure the image is the same height as the container */
+  object-fit: cover; /* Ensures the image maintains aspect ratio within the container */
+  transform: scale(1.04); /* Zoom out to 80% of the original size */
+  transform-origin: center center; /* Ensure zoom out happens from the center */
+}
+.description-odd{
+    color: rgb(28, 28, 28);
+    display: block;
+    width: 895.2px;
+    height: auto;
+    margin-left: 22px;
+    margin-bottom: 40px;
+}
+.project-odd-name{
+    color: rgb(28, 28, 28);
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 22px;
+    margin-top: 60px;
+}
+.project-odd-button{
+    width: 120px; /* Increase button width */
+    height: 45px; /* Increase button height */
+    margin-left: 22px;
+    border-radius: 8px; /* Slightly more rounded */
+    font-weight: 600;
+    font-size: 16px; /* Increase button text size */
+    color: #209bba;
+    background-color: rgb(28, 28, 28);
+    border: 2px solid #209bba;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s, border 0.4s;
+}
+.project-odd-button:hover{
+    background-color: #209bba;
+    color: rgb(28, 28, 28);
+    border: 2px solid rgb(28, 28, 28);
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+}
+.project-even{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(28, 28, 28);
+}
+.description-even{
+    color: #bbb;
+    display: flex;
+    width: 895.2px;
+    height: auto;
+    margin-left: 22px;
+    margin-bottom: 40px;
+}
+.project-even-img{
+    width: 100%;   /* Ensure the image is the same width as the container */
+  height: 100%;  /* Ensure the image is the same height as the container */
+  object-fit: cover; /* Ensures the image maintains aspect ratio within the container */
+  transform: scale(1.08); /* Zoom out to 80% of the original size */
+  transform-origin: center center; /* Ensure zoom out happens from the center */
+}
+.project-even-name{
+    color: #bbb;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 22px;
+    margin-top: 60px;
+}
+.project-even-image-container{
+    width: 600px;  /* Decided width */
+    height: 300px; /* Decided height */
+    overflow: hidden; /* Ensures the image does not overflow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-even-button{
+    width: 120px; /* Increase button width */
+    height: 45px; /* Increase button height */
+    margin-left: 22px;
+    border-radius: 8px; /* Slightly more rounded */
+    font-weight: 600;
+    font-size: 16px; /* Increase button text size */
+    color: rgb(28, 28, 28);
+    background-color: #209bba;
+    border: 2px solid rgb(28, 28, 28);
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s, border 0.4s;
+}
+.project-even-button:hover{
+    background-color: rgb(28, 28, 28);
+    color: #209bba;
+    border: 2px solid #209bba;
+}
+/* Full Resume Section */
+#resume-section {
+    background-color: #333;
+    color: #bbb;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+.resume-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#resume-section h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #209bba;
+}
+
+.resume-block {
+    margin-bottom: 30px;
+}
+
+.resume-block h3 {
+    font-size: 24px;
+    color: #209bba;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+
+.resume-item h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #bbb;
+}
+
+.resume-item p em {
+    font-size: 14px;
+    color: #888;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    background-color: #444;
+    color: #bbb;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .resume-container {
+        padding: 15px;
+    }
+
+    .skills-list {
+        flex-direction: column;
+    }
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #333;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #bbb;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #bbb;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #bbb;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #222;
+    color: #bbb;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button.submit-btn {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #209bba;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.submit-btn:hover {
+    background-color: #197b94;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+}
+/* Footer Section */
+#footer {
+    background-color: #1c1c1c;
+    color: #bbb;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid #444;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: #bbb;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #209bba;
+}
+
+.footer-links {
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #bbb;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #209bba;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
